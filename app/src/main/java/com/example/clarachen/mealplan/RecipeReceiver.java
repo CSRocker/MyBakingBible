@@ -25,7 +25,8 @@ public class RecipeReceiver extends BroadcastReceiver {
 
         if(intent.getAction().equals(Recipe.RECIPE)){
             int local_selectedPos=intent.getExtras().getInt("Selected Item");
-
+            long local_bkTime = intent.getExtras().getLong("Baking Time");
+            Recipe.bkTime=local_bkTime;
             Recipe.selectedPos=local_selectedPos;
         }
     }

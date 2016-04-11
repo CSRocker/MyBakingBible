@@ -58,24 +58,28 @@ public class MainActivity extends AppCompatActivity{
                 switch (position){
                     case 0:
                         listPos=position;
+                        bkTime = 180000;
                         Log.d("Cupcakes ", "Recipe!");
                         Toast.makeText(parent.getContext(),"Cupcakes Recipe!", Toast.LENGTH_SHORT).show();
                         break;
 
                     case 1:
                         listPos=position;
+                        bkTime = 120000;
                         Log.d("Cookies ", "Recipe!");
                         Toast.makeText(parent.getContext(),"Cookies Recipe!", Toast.LENGTH_SHORT).show();
                         break;
 
                     case 2:
                         listPos=position;
+                        bkTime=180000;
                         Log.d("Sponge Cake ", "Recipe!");
                         Toast.makeText(parent.getContext(),"Sponge Cake!", Toast.LENGTH_SHORT).show();
                         break;
 
                     case 3:
                         listPos=position;
+                        bkTime=180000;
                         Log.d("Banana Bread ", "Recipe!");
                         Toast.makeText(parent.getContext(),"Banana Bread", Toast.LENGTH_SHORT).show();
                         break;
@@ -137,6 +141,7 @@ public class MainActivity extends AppCompatActivity{
         Intent recipeSent= new Intent(MainActivity.RECIPE);
         Intent recipe= new Intent(this,Recipe.class);
         recipeSent.putExtra("Selected Item", listPos);
+        recipeSent.putExtra("Baking Time",bkTime);
 
         Log.d("Before Main to Recipe", ".....Sending");
         sendBroadcast(recipeSent);
@@ -154,7 +159,7 @@ public class MainActivity extends AppCompatActivity{
         Intent bkTimer = new Intent(this,Timer.class);
 
         //give the amount of time taken to bake
-        bkTime=60000;
+        //bkTime=60000;
 
         timer.putExtra("Selected_Item",listPos);
         timer.putExtra("Baking_Time",bkTime);

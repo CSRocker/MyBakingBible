@@ -21,7 +21,7 @@ public class Recipe extends AppCompatActivity {
     public static final String TIMER="clara.chen.intent.timer";
 
     public static int selectedPos =0;
-    public static long bkTime =60000;
+    public static long bkTime =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +29,34 @@ public class Recipe extends AppCompatActivity {
         setContentView(R.layout.activity_recipe);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        if(selectedPos==selectedPos){
-           //Show recipe
 
-            Log.d("Debug -->"," Here is the Recipe");
+        //Setup the Recipe TextView
+        TextView recipe_TxtView=(TextView)findViewById(R.id.recipe);
+        String ingredients;
+        switch (selectedPos){
+            case 0:
+                ingredients =this.getString(R.string.cupcake_recipe);
+                recipe_TxtView.setText(""+ingredients);
+                break;
+            case 1:
+                ingredients =this.getString(R.string.cookies_recipe);
+                recipe_TxtView.setText(""+ingredients);
+                break;
+            case 2:
+                ingredients =this.getString(R.string.spongecake_recipe);
+                recipe_TxtView.setText(""+ingredients);
+                break;
+            case 3:
+                ingredients =this.getString(R.string.bananabread_recipe);
+                recipe_TxtView.setText(""+ingredients);
+                break;
+            default:
+                recipe_TxtView.setText("Invalid Choice");
+                break;
+
         }
+
+        Log.d("Debug -->"," Here is the Recipe");
 
     }
 
