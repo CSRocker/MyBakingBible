@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Baking Bible</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="activity_title">Keep Calm &amp; Bake On</string>
+    <string name="baking_items">Baking List</string>
+    <string name="title_activity_recipe">Recipe</string>
+    <string name="title_activity_timer">Timer</string>
+
+    <string name="dialog_txt">Times Up!</string>
+
+    <string name="cupcake_recipe">
+        Cupcakes Recipe\n
+        Ingredients\n
+        \t > 2 stick butter\n
+        \t > 1½ c. sugar\n
+        \t > ½ tsp.salt\n
+        \t > 1tbsp. baking powder\n
+        \t > 4 large eggs\n
+        \t > 1 c. milk\n
+        \t > 2 tsp. vanilla extract\n
+        \t > 2.67 c. all-purpose flour\n
+    </string>
+    <string name="title_activity_times_up_dialog">TimesUpDialog</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="md_primaryLime">#CDDC39</color>
+    <color name="md_darkLime">#AFB42B</color>
+    
+    <color name="md_pink">#FCE4EC</color>
+    <color name="md_hotPink">#F06292</color>
+    <color name="md_pink200">#F48FB1</color>
+
+    <color name="md_cyan">#4DD0E1</color>
+</resources>

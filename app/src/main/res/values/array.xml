@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bake_array">
+        <item>Cupcakes</item>
+        <item>Cookies</item>
+        <item>Sponge Cake</item>
+        <item>Banana Bread</item>
+    </string-array>
+</resources>
